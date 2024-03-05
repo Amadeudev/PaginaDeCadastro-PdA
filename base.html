@@ -3,14 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous"/>
   <link rel="stylesheet" href="style.css" />
   <title>Artigos Estudantis</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Cadastro de Artigos Estudantis</h1>
+    
+    <form id="artigoForm">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
 
+        <label for="anoPublicacao">Ano de Publicação:</label>
+        <input type="text" id="anoPublicacao">
+
+        <label for="autor">Nome do Autor:</label>
+        <input type="text" id="autor">
+
+        <label for="link">Link (opcional):</label>
+        <input type="text" id="link">
+
+        <button type="button" onclick="cadastrarArtigo()">Cadastrar</button>
+    </form>
+
+    <ul id="listaArtigos"></ul>
+</div>
   <script src="script.js"></script>
 </body>
 </html>

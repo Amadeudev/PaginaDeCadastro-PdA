@@ -1,9 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: white;
+    color: #fff;
     margin: 0;
     padding: 0;
+}
+
+.cadastro {
+    text-align: center;
 }
 
 .container {
@@ -48,10 +52,4 @@ li button {
     padding: 5px 10px;
     margin-left: 10px;
     cursor: pointer;
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
 }

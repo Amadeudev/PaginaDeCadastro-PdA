@@ -8,14 +8,14 @@
 </head>
 <body>
   <div class="container">
-    <h1>Cadastro de Artigos Estudantis</h1>
+    <h1 class="cadastro">Cadastro de Artigos Estudantis</h1>
     
     <form id="artigoForm">
         <label for="titulo">Título:</label>
         <input type="text" id="titulo" required>
 
         <label for="anoPublicacao">Ano de Publicação:</label>
-        <input type="text" id="anoPublicacao">
+        <input type="text" id="ano">
 
         <label for="autor">Nome do Autor:</label>
         <input type="text" id="autor">
@@ -23,13 +23,13 @@
         <label for="link">Link (opcional):</label>
         <input type="text" id="link">
 
-        <button type="button" onclick="cadastrarArtigo()">Cadastrar</button>
-        
+        <button type="button" onclick="adicionarArtigo()">Cadastrar</button>
     </form>
 
-    <h2>Artigos Cadastrados</h2>
+    <h2 class="cadastro">Artigos Cadastrados</h2>
     <ul id="listaArtigos"></ul>
-</div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

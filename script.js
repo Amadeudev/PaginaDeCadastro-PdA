@@ -30,3 +30,36 @@ function adicionarArtigo() {
     renderizarArtigos();
     document.getElementById('artigoForm').reset();
 }
+
+function renderizarArtigos() {
+    const lista = document.getElementById('listaArtigos');
+    lista.innerHTML = '';
+
+    listaArtigos.forEach((artigo, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <span>${artigo.titulo} - ${artigo.autor} (${artigo.ano})</span>
+            <div>
+                <a href="${artigo.link}" target="_blank">Leia o artigo</a>
+                <button onclick="editarArtigo(${index})">Editar</button>
+                <button onclick="excluirArtigo(${index})">Excluir</button>
+            </div>
+        `;
+        lista.appendChild(li);
+    });
+}
+
+function editarArtigo(index) {
+    const artigo = listaArtigos[index];
+    document.getElementById('titulo').value = artigo.titulo;
+    document.getElementById('autor').value = artigo.autor;
+    document.getElementById('ano').value = artigo.ano;
+    document.getElementById('link').value = artigo.link;
+    listaArtigos.splice(index, 1);
+    renderizarArtigos();
+}
+
+function excluirArtigo(index) {
+    listaArtigos.splice(index, 1);
+    renderizarArtigos();
+}

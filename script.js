@@ -9,6 +9,7 @@ class Artigo {
 
 const listaArtigos = [];
 
+// adicionando o que a lista pede
 function adicionarArtigo() {
     const titulo = document.getElementById('titulo').value;
     const autor = document.getElementById('autor').value;
@@ -31,6 +32,7 @@ function adicionarArtigo() {
     document.getElementById('artigoForm').reset();
 }
 
+// fará aparecer a lista com todos os dados, na tela do usuário
 function renderizarArtigos() {
     const lista = document.getElementById('listaArtigos');
     lista.innerHTML = '';
@@ -49,6 +51,7 @@ function renderizarArtigos() {
     });
 }
 
+// função para editar o artigo (botão aparecerá após o artigo ser colocado)
 function editarArtigo(index) {
     const artigo = listaArtigos[index];
     document.getElementById('titulo').value = artigo.titulo;
@@ -59,7 +62,25 @@ function editarArtigo(index) {
     renderizarArtigos();
 }
 
+// função para excluir o artigo
 function excluirArtigo(index) {
     listaArtigos.splice(index, 1);
     renderizarArtigos();
 }
+
+// adicionando um event listener no evento input do campo ano
+document.getElementById('ano').addEventListener('input', function(event) {
+    // obtendo o valor do campo e a posição do cursor do mouse
+    const inputValue = event.target.value;
+    const cursorPosition = event.target.selectionStart;
+  
+    // verificação da possibilidade de ter apenas números
+    const onlyDigits = /^\d*$/.test(inputValue);
+  
+    //retira o caractere caso seja uma letra
+    if (!onlyDigits) {
+      event.target.value = inputValue.slice(0, cursorPosition - 1) + inputValue.slice(cursorPosition);
+      event.target.selectionStart = cursorPosition - 1;
+      event.target.selectionEnd = cursorPosition - 1;
+    }
+  });

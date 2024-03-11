@@ -43,7 +43,7 @@ button {
 
 .salvo {
     background-color: brown;
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
     border-radius: 8px;
@@ -51,8 +51,10 @@ button {
 }
 
 li {
+    color: black;
+    background-color:darkgray;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid darkgray;
     padding: 10px;
     border-radius: 4px;
 }

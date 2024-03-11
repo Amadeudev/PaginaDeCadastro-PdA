@@ -1,6 +1,11 @@
+@media screen and (max-width: 600px) {
+    .cadastro {
+        font-size: 23px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     body {
-        background-color: brown;
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -26,8 +31,7 @@
 
 @media screen and (max-width: 1000px) {
     .salvo {
-        background-color: brown;
-        width: 90%;
+        width: 80%;
         margin: auto;
         padding: 20px;
         border-radius: 8px;

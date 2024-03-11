@@ -21,7 +21,7 @@ function adicionarArtigo() {
     }
 
     if (parseInt(ano) < 1950 || parseInt(ano) > 2024) {
-        alert('Por favor, digite um ano entre 1950 e 2022.');
+        alert('Por favor, digite um ano entre 1950 e 2024.');
         return;
     }
 

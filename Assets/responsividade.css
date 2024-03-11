@@ -1,0 +1,25 @@
+@media screen and (max-width: 800px) {
+    body {
+        background-color: brown;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    .container {
+        width: 80%;
+        display: grid;
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: brown;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+
+    #listaArtigos {
+        list-style: none;
+        padding: 0;
+        margin: 30px;
+    }
+}

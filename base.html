@@ -4,30 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Assets/responsividade.css" />
   <title>Artigos Estudantis</title>
 </head>
 <body>
+    <div>
   <div class="container">
     <h1 class="cadastro">Cadastro de Artigos Estudantis</h1>
     
     <form id="artigoForm">
         <label for="titulo">Título:</label>
-        <input type="text" id="titulo" required>
+        <input type="text" id="titulo" placeholder="Adicione o título de seu artigo." required>
 
         <label for="anoPublicacao">Ano de Publicação:</label>
-        <input type="text" id="ano" placeholder="Utilize apenas números">
+        <input type="text" id="ano" placeholder="Utilize apenas números!">
 
         <label for="autor">Nome do Autor:</label>
-        <input type="text" id="autor" placeholder="Adicione o nome do Autor">
+        <input type="text" id="autor" placeholder="Adicione o nome do Autor.">
 
         <label for="link">Link do Artigo:</label>
         <input type="text" id="link" placeholder="Caso você não tenha o seu artigo postado, adicione-o ao Google Drive.">
 
         <button type="button" onclick="adicionarArtigo()">Cadastrar</button>
     </form>
+    </div>
 
-    <h2 class="cadastro">Artigos Cadastrados</h2>
-    <ul id="listaArtigos"></ul>
+    <div class="salvo">
+      <h2 class="cadastro">Artigos Cadastrados</h2>
+      <ul id="listaArtigos"></ul>
+    </div>
   </div>
 
   <script src="script.js"></script>

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #0D1117;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+    justify-content: center;
     max-width: 600px;
     margin: 50px auto;
     background-color: brown;
@@ -19,9 +20,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
+#artigoForm {
     display: grid;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -33,9 +35,20 @@ button {
     cursor: pointer;
 }
 
-ul {
+#listaArtigos {
+    font-size: 20px;
     list-style: none;
     padding: 0;
+    margin: 50px;
+}
+
+.salvo {
+    background-color: brown;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 li {

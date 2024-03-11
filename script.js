@@ -41,10 +41,12 @@ function renderizarArtigos() {
         const li = document.createElement('li');
         li.innerHTML = `
             <span>${artigo.titulo} - ${artigo.autor} (${artigo.ano})</span>
-            <div>
+            <div class="link">
                 <a href="${artigo.link}" target="_blank">Leia o artigo</a>
-                <button onclick="editarArtigo(${index})">Editar</button>
-                <button onclick="excluirArtigo(${index})">Excluir</button>
+                <div class="button">
+                    <button onclick="editarArtigo(${index})">Editar</button>
+                    <button onclick="excluirArtigo(${index})">Excluir</button>
+                </div>
             </div>
         `;
         lista.appendChild(li);

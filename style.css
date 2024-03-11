@@ -67,3 +67,8 @@ li button {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.link {
+    display: flex;
+    justify-content: space-between;
+}

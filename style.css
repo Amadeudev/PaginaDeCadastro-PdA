@@ -39,12 +39,11 @@ button {
     font-size: 20px;
     list-style: none;
     padding: 0;
-    margin: 50px;
 }
 
 .salvo {
     background-color: brown;
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
     padding: 20px;
     border-radius: 8px;
